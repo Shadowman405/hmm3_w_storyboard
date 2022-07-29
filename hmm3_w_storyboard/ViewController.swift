@@ -13,7 +13,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+// MARK: - Buttons
 
-
+    @IBAction func TownsClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func HeroesClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func CreaturesClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func MagicClicked(_ sender: Any) {
+    }
+    
+    @IBAction func ArtifactsClicked(_ sender: Any) {
+    }
+    
 }
 

@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
 // MARK: - Buttons
 
-    @IBAction func TownsClicked(_ sender: UIButton) {
-    }
     
     @IBAction func HeroesClicked(_ sender: UIButton) {
     }

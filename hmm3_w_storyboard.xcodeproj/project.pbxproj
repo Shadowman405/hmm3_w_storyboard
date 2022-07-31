@@ -20,6 +20,7 @@
 		BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712D2896EA03006E5E98 /* TownCell.swift */; };
 		BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712F2896EAFC006E5E98 /* TownCategory.swift */; };
 		BF417132289737E1006E5E98 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417131289737E1006E5E98 /* DataManager.swift */; };
+		BF41713828973A56006E5E98 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713728973A56006E5E98 /* Heroes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BF41712D2896EA03006E5E98 /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 		BF41712F2896EAFC006E5E98 /* TownCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCategory.swift; sourceTree = "<group>"; };
 		BF417131289737E1006E5E98 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BF41713728973A56006E5E98 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				BF417131289737E1006E5E98 /* DataManager.swift */,
 				BF41712F2896EAFC006E5E98 /* TownCategory.swift */,
+				BF41713728973A56006E5E98 /* Heroes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
 				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
+				BF41713828973A56006E5E98 /* Heroes.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,
 			);

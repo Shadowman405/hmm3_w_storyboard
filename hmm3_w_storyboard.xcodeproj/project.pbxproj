@@ -19,6 +19,7 @@
 		BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */; };
 		BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712D2896EA03006E5E98 /* TownCell.swift */; };
 		BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712F2896EAFC006E5E98 /* TownCategory.swift */; };
+		BF417132289737E1006E5E98 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417131289737E1006E5E98 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
 		BF41712D2896EA03006E5E98 /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 		BF41712F2896EAFC006E5E98 /* TownCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCategory.swift; sourceTree = "<group>"; };
+		BF417131289737E1006E5E98 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +107,11 @@
 		BF16EA3D2894A3AC00D8F27C /* hmm3_w_storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				BF16EA3E2894A3AC00D8F27C /* AppDelegate.swift */,
-				BF16EA402894A3AC00D8F27C /* SceneDelegate.swift */,
-				BF16EA422894A3AC00D8F27C /* ViewController.swift */,
-				BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */,
-				BF41712D2896EA03006E5E98 /* TownCell.swift */,
+				BF417133289737EB006E5E98 /* Model */,
+				BF41713528973807006E5E98 /* Controller */,
+				BF417134289737F9006E5E98 /* View */,
+				BF4171362897381D006E5E98 /* Other */,
 				BF16EA442894A3AC00D8F27C /* Main.storyboard */,
-				BF41712F2896EAFC006E5E98 /* TownCategory.swift */,
 				BF16EA472894A3AD00D8F27C /* Assets.xcassets */,
 				BF16EA492894A3AD00D8F27C /* LaunchScreen.storyboard */,
 				BF16EA4C2894A3AD00D8F27C /* Info.plist */,
@@ -134,6 +134,41 @@
 				BF16EA612894A3AE00D8F27C /* hmm3_w_storyboardUITestsLaunchTests.swift */,
 			);
 			path = hmm3_w_storyboardUITests;
+			sourceTree = "<group>";
+		};
+		BF417133289737EB006E5E98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF417131289737E1006E5E98 /* DataManager.swift */,
+				BF41712F2896EAFC006E5E98 /* TownCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF417134289737F9006E5E98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF41712D2896EA03006E5E98 /* TownCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF41713528973807006E5E98 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */,
+				BF16EA422894A3AC00D8F27C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF4171362897381D006E5E98 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BF16EA3E2894A3AC00D8F27C /* AppDelegate.swift */,
+				BF16EA402894A3AC00D8F27C /* SceneDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +305,7 @@
 				BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */,
 				BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */,
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
+				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,

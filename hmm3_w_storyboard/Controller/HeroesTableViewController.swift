@@ -9,7 +9,7 @@ import UIKit
 
 class HeroesTableViewController: UITableViewController {
     
-    var towns = [TownCategory(title: "Castle", imageName: "Castle-in"), TownCategory(title: "Rampart", imageName: "Rampart-in"), TownCategory(title: "Tower", imageName: "Tower-in"), TownCategory(title: "Inferno", imageName: "Inferno-in"), TownCategory(title: "Necropolis", imageName: "Necropolis-in"), TownCategory(title: "Dungeon", imageName: "Dungeon-in"), TownCategory(title: "Stronghold", imageName: "Stronghold-in"), TownCategory(title: "Fortress", imageName: "Fortress-in"), TownCategory(title: "Conflux", imageName: "Conflux-in")]
+    let data = DataSet()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,13 @@ class HeroesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return towns.count
+        return data.towns.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "heroesCell", for: indexPath) as? TownCell {
-            cell.configureCell(town: towns[indexPath.row])
+            cell.configureCell(town: data.towns[indexPath.row])
             return cell
         }
 

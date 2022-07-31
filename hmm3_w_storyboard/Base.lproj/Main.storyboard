@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HoMM3 Wiki-->
+        <!--Towns-->
         <scene sceneID="DuV-ED-r37">
             <objects>
                 <tableViewController id="Awp-eZ-iZH" customClass="HeroesTableViewController" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,10 +27,10 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-XZ-9Ba">
                                             <rect key="frame" x="28" y="11" width="358" height="120"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-TD-1q0">
-                                            <rect key="frame" x="50" y="99" width="314" height="20"/>
-                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-TD-1q0">
+                                            <rect key="frame" x="50" y="83.5" width="314" height="35.5"/>
+                                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="28"/>
+                                            <color key="textColor" red="0.33631956908582716" green="0.97048253883816615" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="Awp-eZ-iZH" id="WLf-In-9Oj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="HoMM3 Wiki" id="VfN-HJ-YKa"/>
+                    <navigationItem key="navigationItem" title="Towns" id="VfN-HJ-YKa"/>
                     <connections>
                         <segue destination="ayq-EV-H46" kind="show" identifier="selector" id="RaK-ll-1yR"/>
                     </connections>

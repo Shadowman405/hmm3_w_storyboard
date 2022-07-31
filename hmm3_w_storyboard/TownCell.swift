@@ -21,5 +21,10 @@ class TownCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    func configureCell(town: TownCategory) {
+        townImage.image = UIImage(named: town.imageName)
+        townLbl.text = town.title
+    }
 
 }

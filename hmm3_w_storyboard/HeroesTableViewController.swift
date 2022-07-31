@@ -9,7 +9,7 @@ import UIKit
 
 class HeroesTableViewController: UITableViewController {
     
-    var towns = ["Castle", "Rampart", "Inferno", "Necropolis", "Tower", "Dungeon", "Citadel", "Fortress", "Conflux"]
+    var towns = [TownCategory(title: "Castle", imageName: "Castle-in"), TownCategory(title: "Rampart", imageName: "Rampart-in"), TownCategory(title: "Tower", imageName: "Tower-in"), TownCategory(title: "Inferno", imageName: "Inferno-in"), TownCategory(title: "Necropolis", imageName: "Necropolis-in"), TownCategory(title: "Dungeon", imageName: "Dungeon-in"), TownCategory(title: "Stronghold", imageName: "Stronghold-in"), TownCategory(title: "Fortress", imageName: "Fortress-in"), TownCategory(title: "Conflux", imageName: "Conflux-in")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +24,12 @@ class HeroesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "heroesCell", for: indexPath)
-        cell.textLabel!.text = towns[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "heroesCell", for: indexPath) as? TownCell {
+            cell.configureCell(town: towns[indexPath.row])
+            return cell
+        }
 
-        return cell
+        return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

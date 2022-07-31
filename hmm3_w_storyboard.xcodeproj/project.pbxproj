@@ -18,6 +18,7 @@
 		BF16EA622894A3AE00D8F27C /* hmm3_w_storyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16EA612894A3AE00D8F27C /* hmm3_w_storyboardUITestsLaunchTests.swift */; };
 		BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */; };
 		BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712D2896EA03006E5E98 /* TownCell.swift */; };
+		BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41712F2896EAFC006E5E98 /* TownCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BF16EA612894A3AE00D8F27C /* hmm3_w_storyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmm3_w_storyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
 		BF41712D2896EA03006E5E98 /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
+		BF41712F2896EAFC006E5E98 /* TownCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */,
 				BF41712D2896EA03006E5E98 /* TownCell.swift */,
 				BF16EA442894A3AC00D8F27C /* Main.storyboard */,
+				BF41712F2896EAFC006E5E98 /* TownCategory.swift */,
 				BF16EA472894A3AD00D8F27C /* Assets.xcassets */,
 				BF16EA492894A3AD00D8F27C /* LaunchScreen.storyboard */,
 				BF16EA4C2894A3AD00D8F27C /* Info.plist */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */,
+				BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */,
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,

@@ -17,13 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="heroesCell" id="Tjc-cT-zMT">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="32b-EG-fPb" customClass="TownCell" customModule="hmm3_w_storyboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tjc-cT-zMT" id="5ky-wZ-5lw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="32b-EG-fPb" id="O2S-Jf-yzO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-XZ-9Ba">
+                                            <rect key="frame" x="28" y="11" width="358" height="170"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-TD-1q0">
+                                            <rect key="frame" x="50" y="149" width="314" height="20"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LSP-TD-1q0" firstAttribute="leading" secondItem="O2S-Jf-yzO" secondAttribute="leadingMargin" constant="30" id="0YY-dA-hyq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="LSP-TD-1q0" secondAttribute="bottom" constant="20" id="3tO-bb-P6t"/>
+                                        <constraint firstItem="JJ1-XZ-9Ba" firstAttribute="leading" secondItem="O2S-Jf-yzO" secondAttribute="leadingMargin" constant="8" id="KKp-5O-h92"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="JJ1-XZ-9Ba" secondAttribute="trailing" constant="8" id="OoE-BJ-5pi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="LSP-TD-1q0" secondAttribute="trailing" constant="30" id="ZWh-kv-8Ph"/>
+                                        <constraint firstItem="JJ1-XZ-9Ba" firstAttribute="top" secondItem="O2S-Jf-yzO" secondAttribute="topMargin" id="mrs-cO-5cY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="JJ1-XZ-9Ba" secondAttribute="bottom" constant="8" id="rqP-nm-hm8"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="townImage" destination="JJ1-XZ-9Ba" id="YHk-0B-oQL"/>
+                                    <outlet property="townLbl" destination="LSP-TD-1q0" id="kqc-ce-Fp8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

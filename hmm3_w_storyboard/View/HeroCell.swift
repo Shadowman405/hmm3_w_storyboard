@@ -12,7 +12,6 @@ class HeroCell: UITableViewCell {
     @IBOutlet weak var heroImg: UIImageView!
     @IBOutlet weak var heroName: UILabel!
     @IBOutlet weak var heroSpec: UILabel!
-    @IBOutlet weak var heroDescription: UILabel!
     
 
     override func awakeFromNib() {
@@ -29,8 +28,7 @@ class HeroCell: UITableViewCell {
     func configureCell(hero: Hero) {
         heroImg.image = UIImage(named: hero.heroImg)
         heroName.text = hero.name
-        heroSpec.text = hero.heroSpec
-        heroDescription.text = hero.description
+        heroSpec.text = hero.heroClass
     }
 
 }

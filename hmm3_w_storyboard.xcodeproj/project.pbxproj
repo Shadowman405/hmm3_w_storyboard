@@ -23,6 +23,7 @@
 		BF41713828973A56006E5E98 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713728973A56006E5E98 /* Heroes.swift */; };
 		BF41713A28973CFF006E5E98 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713928973CFF006E5E98 /* HeroCell.swift */; };
 		BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713B28973E56006E5E98 /* HeroesController.swift */; };
+		BF41713E2897EDEE006E5E98 /* HeroDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BF41713728973A56006E5E98 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
 		BF41713928973CFF006E5E98 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		BF41713B28973E56006E5E98 /* HeroesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesController.swift; sourceTree = "<group>"; };
+		BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				BF16EA6E2894A4B900D8F27C /* HeroesTableViewController.swift */,
 				BF16EA422894A3AC00D8F27C /* ViewController.swift */,
 				BF41713B28973E56006E5E98 /* HeroesController.swift */,
+				BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */,
 				BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */,
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
+				BF41713E2897EDEE006E5E98 /* HeroDetailsVC.swift in Sources */,
 				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
 				BF41713828973A56006E5E98 /* Heroes.swift in Sources */,

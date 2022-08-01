@@ -23,7 +23,7 @@ class HeroesController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 100
     }
 
     
@@ -33,6 +33,17 @@ class HeroesController: UITableViewController {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toHeroDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toHeroDetails",
+           let destination = segue.destination as? HeroDetailsVC {
+            
+        }
     }
     
 

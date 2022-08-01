@@ -107,7 +107,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Heroes"/>
                                 <connections>
                                     <action selector="HeroesClicked:" destination="ayq-EV-H46" eventType="touchUpInside" id="fsH-OA-aTv"/>
-                                    <segue destination="Nno-Me-seT" kind="show" id="dcx-Lq-TOt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,6 +114,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fqI-z7-Vi1"/>
+                    <connections>
+                        <segue destination="Nno-Me-seT" kind="show" identifier="toHeroesTableVC" id="7ps-BM-eHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDb-vA-TMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

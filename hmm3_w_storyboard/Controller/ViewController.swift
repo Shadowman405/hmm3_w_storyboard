@@ -8,16 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var heroesArray: [Hero]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(heroesArray ?? "")
     }
     
 // MARK: - Buttons
 
     
     @IBAction func HeroesClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "toHeroesTableVC", sender: self)
     }
     
     @IBAction func CreaturesClicked(_ sender: UIButton) {
@@ -28,6 +32,13 @@ class ViewController: UIViewController {
     
     @IBAction func ArtifactsClicked(_ sender: Any) {
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toHeroesTableVC",
+           let destination = segue.destination as? HeroesController {
+            destination.filteredHeroes = heroesArray
+            }
+        }
     
 }
 

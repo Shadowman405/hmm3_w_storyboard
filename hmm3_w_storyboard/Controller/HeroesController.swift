@@ -10,6 +10,7 @@ import UIKit
 class HeroesController: UITableViewController {
     
     let data = DataSet()
+    var filteredHeroes: [Hero]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +19,10 @@ class HeroesController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return data.heroes.count
+        if let heroesCount = filteredHeroes {
+            return heroesCount.count
+        }
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -29,8 +32,11 @@ class HeroesController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "heroCell", for: indexPath) as? HeroCell {
-            cell.configureCell(hero: data.heroes[indexPath.row])
+            if let arrayHeroes = filteredHeroes {
+            cell.configureCell(hero: arrayHeroes[indexPath.row])
+                print(arrayHeroes.count)
             return cell
+            }
         }
         return UITableViewCell()
     }
@@ -48,6 +54,4 @@ class HeroesController: UITableViewController {
             destination.selectedHeroPass = data.heroes[indexPath.row]
         }
     }
-    
-
 }

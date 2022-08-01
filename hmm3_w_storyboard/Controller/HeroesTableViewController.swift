@@ -40,5 +40,16 @@ class HeroesTableViewController: UITableViewController {
         performSegue(withIdentifier: "selector", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selector",
+           let destination = segue.destination as? ViewController {
+            let indexPath = tableView.indexPathForSelectedRow!
+            if indexPath.row == 0 {
+                let filteredArray = data.heroes.filter {$0.race == .Castle}
+                destination.heroesArray = filteredArray
+            }
+        }
+    }
+    
 
 }

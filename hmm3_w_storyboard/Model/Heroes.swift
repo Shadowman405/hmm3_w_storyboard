@@ -16,4 +16,17 @@ struct Hero {
     let firstSkill: String
     let secondSkill: String?
     let heroSpell: String?
+    let race: raceTown
+}
+
+enum raceTown {
+    case Castle
+    case Rampart
+    case Tower
+    case Inferno
+    case Necropolis
+    case Dungeon
+    case Stronghold
+    case Fortress
+    case Conflux
 }

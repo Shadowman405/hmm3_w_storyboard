@@ -19,10 +19,19 @@ class HeroDetailsVC: UIViewController {
     @IBOutlet weak var heroSecondSkill: UILabel!
     @IBOutlet weak var heroDescription: UILabel!
     
+    @IBOutlet weak var secondTextLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let selectedHero = selectedHeroPass {
             configureView(hero: selectedHero)
+        }
+        
+        heroImg.layer.cornerRadius = 40
+        
+        if heroSecondSkill.text == nil {
+            secondTextLbl.isHidden = true
         }
     }
     

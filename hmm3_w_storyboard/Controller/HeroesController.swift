@@ -39,10 +39,13 @@ class HeroesController: UITableViewController {
         performSegue(withIdentifier: "toHeroDetails", sender: self)
     }
     
+    //MARK: - Segues
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toHeroDetails",
            let destination = segue.destination as? HeroDetailsVC {
-            
+            let indexPath = tableView.indexPathForSelectedRow!
+            destination.selectedHeroPass = data.heroes[indexPath.row]
         }
     }
     

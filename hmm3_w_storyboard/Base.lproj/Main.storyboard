@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="3528.985507246377" y="67.633928571428569"/>
         </scene>
-        <!--Creatures Table View Controller-->
+        <!--Creatures-->
         <scene sceneID="tvb-Sw-3jE">
             <objects>
                 <tableViewController id="Q06-Vm-N7Y" customClass="CreaturesTableViewController" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqn-hk-0b4">
-                                            <rect key="frame" x="108" y="11" width="80" height="21"/>
+                                            <rect key="frame" x="108" y="11" width="134" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -171,13 +171,13 @@
                             <outlet property="delegate" destination="Q06-Vm-N7Y" id="0sJ-uN-nTu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1IH-pp-o65"/>
+                    <navigationItem key="navigationItem" title="Creatures" id="1IH-pp-o65"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vld-g8-zb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4518.840579710145" y="-84.375"/>
         </scene>
-        <!--Heroes Controller-->
+        <!--Heroes-->
         <scene sceneID="eQP-hQ-aiP">
             <objects>
                 <tableViewController id="Nno-Me-seT" customClass="HeroesController" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                             <outlet property="delegate" destination="Nno-Me-seT" id="5xs-JA-nwX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="r3E-yf-obz"/>
+                    <navigationItem key="navigationItem" title="Heroes" id="r3E-yf-obz"/>
                     <connections>
                         <segue destination="eEZ-Ep-Pry" kind="show" identifier="toHeroDetails" id="b1P-qE-5Xx"/>
                     </connections>

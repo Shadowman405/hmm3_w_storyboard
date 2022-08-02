@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var heroesArray: [Hero]?
+    var creaturesArray: [Creature]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func CreaturesClicked(_ sender: UIButton) {
+        
     }
     
     @IBAction func MagicClicked(_ sender: Any) {
@@ -37,7 +39,10 @@ class ViewController: UIViewController {
         if segue.identifier == "toHeroesTableVC",
            let destination = segue.destination as? HeroesController {
             destination.filteredHeroes = heroesArray
-            }
+        } else if segue.identifier == "toCreaturesTableVC",
+                  let destination = segue.destination as? CreaturesTableViewController {
+            destination.filteredCreatures = creaturesArray
+        }
         }
     
 }

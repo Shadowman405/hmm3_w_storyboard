@@ -10,6 +10,7 @@ import Foundation
 struct Creature{
     let name: String
     let creatureImg: String
+    let creatureLevel: String
     let attack: String
     let defense: String
     let damage: String

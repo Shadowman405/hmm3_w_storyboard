@@ -45,8 +45,10 @@ class HeroesTableViewController: UITableViewController {
            let destination = segue.destination as? ViewController {
             let indexPath = tableView.indexPathForSelectedRow!
             if indexPath.row == 0 {
-                let filteredArray = data.heroes.filter {$0.race == .Castle}
-                destination.heroesArray = filteredArray
+                let filteredHeroesArray = data.heroes.filter {$0.race == .Castle}
+                let filteredCreaturesArray = data.creatures.filter {$0.race == .Castle}
+                destination.heroesArray = filteredHeroesArray
+                destination.creaturesArray = filteredCreaturesArray
             }
         }
     }

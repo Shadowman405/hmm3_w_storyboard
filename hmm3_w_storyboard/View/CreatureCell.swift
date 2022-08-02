@@ -28,7 +28,7 @@ class CreatureCell: UITableViewCell {
     func configureCell(creature: Creature){
         creatureImg.image = UIImage(named: creature.creatureImg)
         creatureName.text = creature.name
-        creatureLvl.text = creature.creatureLevel
+        creatureLvl.text = "Level: " + creature.creatureLevel
     }
 
 }

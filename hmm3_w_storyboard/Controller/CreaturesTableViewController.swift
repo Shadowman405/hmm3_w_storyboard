@@ -23,7 +23,9 @@ class CreaturesTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        if let creaturesCount = filteredCreatures {
+            return creaturesCount.count
+        }
         return 0
     }
     

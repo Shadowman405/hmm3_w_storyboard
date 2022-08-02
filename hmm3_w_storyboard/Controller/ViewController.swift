@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func CreaturesClicked(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toCreaturesTableVC", sender: self)
     }
     
     @IBAction func MagicClicked(_ sender: Any) {

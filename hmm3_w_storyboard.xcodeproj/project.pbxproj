@@ -24,6 +24,8 @@
 		BF41713A28973CFF006E5E98 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713928973CFF006E5E98 /* HeroCell.swift */; };
 		BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713B28973E56006E5E98 /* HeroesController.swift */; };
 		BF41713E2897EDEE006E5E98 /* HeroDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */; };
+		BF4171402899B29C006E5E98 /* Creatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41713F2899B29C006E5E98 /* Creatures.swift */; };
+		BF4171422899B2B9006E5E98 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4171412899B2B9006E5E98 /* Race.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		BF41713928973CFF006E5E98 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		BF41713B28973E56006E5E98 /* HeroesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesController.swift; sourceTree = "<group>"; };
 		BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsVC.swift; sourceTree = "<group>"; };
+		BF41713F2899B29C006E5E98 /* Creatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creatures.swift; sourceTree = "<group>"; };
+		BF4171412899B2B9006E5E98 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				BF417131289737E1006E5E98 /* DataManager.swift */,
 				BF41712F2896EAFC006E5E98 /* TownCategory.swift */,
 				BF41713728973A56006E5E98 /* Heroes.swift */,
+				BF41713F2899B29C006E5E98 /* Creatures.swift */,
+				BF4171412899B2B9006E5E98 /* Race.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,10 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4171402899B29C006E5E98 /* Creatures.swift in Sources */,
 				BF41713A28973CFF006E5E98 /* HeroCell.swift in Sources */,
 				BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */,
 				BF4171302896EAFC006E5E98 /* TownCategory.swift in Sources */,
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
+				BF4171422899B2B9006E5E98 /* Race.swift in Sources */,
 				BF41713E2897EDEE006E5E98 /* HeroDetailsVC.swift in Sources */,
 				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,

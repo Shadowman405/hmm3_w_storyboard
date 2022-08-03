@@ -51,7 +51,9 @@ class HeroesController: UITableViewController {
         if segue.identifier == "toHeroDetails",
            let destination = segue.destination as? HeroDetailsVC {
             let indexPath = tableView.indexPathForSelectedRow!
-            destination.selectedHeroPass = data.heroes[indexPath.row]
+            if let heroesArray = filteredHeroes {
+                destination.selectedHeroPass = heroesArray[indexPath.row]
+            }
         }
     }
 }

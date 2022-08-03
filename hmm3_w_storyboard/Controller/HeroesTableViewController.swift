@@ -54,6 +54,9 @@ class HeroesTableViewController: UITableViewController {
                 destination.heroesArray = filteredHeroesArray
                 let filteredCreaturesArray = data.creatures.filter {$0.race == .Rampart}
                 destination.creaturesArray = filteredCreaturesArray
+            } else if indexPath.row == 2 {
+                let filteredHeroesArray = data.heroes.filter {$0.race == .Tower}
+                destination.heroesArray = filteredHeroesArray
             }
         }
     }

@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="4518.840579710145" y="-84.375"/>
         </scene>
-        <!--Creature DetailsVC-->
+        <!--Details-->
         <scene sceneID="z7D-Se-CZH">
             <objects>
                 <viewController id="rvY-CD-cMN" customClass="CreatureDetailsVC" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,7 +287,7 @@
                         <viewLayoutGuide key="safeArea" id="OhF-nB-1cN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1dR-22-oP4"/>
+                    <navigationItem key="navigationItem" title="Details" id="1dR-22-oP4"/>
                     <connections>
                         <outlet property="creatureAtckLbl" destination="X3z-fO-JcZ" id="bgc-AG-Z0L"/>
                         <outlet property="creatureDefLbl" destination="xeA-3z-xBs" id="bgM-mC-WYJ"/>
@@ -360,7 +360,7 @@
             </objects>
             <point key="canvasLocation" x="4307" y="-802"/>
         </scene>
-        <!--Hero DetailsVC-->
+        <!--Details-->
         <scene sceneID="Txm-aR-67J">
             <objects>
                 <viewController id="eEZ-Ep-Pry" customClass="HeroDetailsVC" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -460,7 +460,7 @@
                         <viewLayoutGuide key="safeArea" id="ouz-Zt-eaP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o9S-yO-4VV"/>
+                    <navigationItem key="navigationItem" title="Details" id="o9S-yO-4VV"/>
                     <connections>
                         <outlet property="heroClass" destination="kHH-pR-MfM" id="Oj6-F0-sam"/>
                         <outlet property="heroDescription" destination="F7C-0P-eQ6" id="lpK-yt-ToC"/>

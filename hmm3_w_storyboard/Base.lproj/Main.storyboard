@@ -172,10 +172,29 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Creatures" id="1IH-pp-o65"/>
+                    <connections>
+                        <segue destination="rvY-CD-cMN" kind="show" identifier="toCreatureDetails" id="u10-3W-YSv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vld-g8-zb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4518.840579710145" y="-84.375"/>
+        </scene>
+        <!--Creature DetailsVC-->
+        <scene sceneID="z7D-Se-CZH">
+            <objects>
+                <viewController id="rvY-CD-cMN" customClass="CreatureDetailsVC" customModule="hmm3_w_storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PuI-lw-DL8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OhF-nB-1cN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1dR-22-oP4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4h-WD-tox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5339" y="-84"/>
         </scene>
         <!--Heroes-->
         <scene sceneID="eQP-hQ-aiP">

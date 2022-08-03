@@ -28,6 +28,7 @@
 		BF4171422899B2B9006E5E98 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4171412899B2B9006E5E98 /* Race.swift */; };
 		BF4171442899B7BA006E5E98 /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4171432899B7BA006E5E98 /* CreatureCell.swift */; };
 		BF4171462899B7E7006E5E98 /* CreaturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */; };
+		BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		BF4171412899B2B9006E5E98 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		BF4171432899B7BA006E5E98 /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
 		BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesTableViewController.swift; sourceTree = "<group>"; };
+		BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				BF41713B28973E56006E5E98 /* HeroesController.swift */,
 				BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */,
 				BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */,
+				BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
 				BF41713828973A56006E5E98 /* Heroes.swift in Sources */,
+				BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,
 				BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */,

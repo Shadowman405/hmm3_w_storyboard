@@ -46,6 +46,7 @@ class CreaturesTableViewController: UITableViewController {
         if segue.identifier == "toCreatureDetails",
             let destination = segue.destination as? CreatureDetailsVC {
                 let indexPath = tableView.indexPathForSelectedRow!
+                destination.selectedCreaturePass = filteredCreatures![indexPath.row]
             }
         }
 

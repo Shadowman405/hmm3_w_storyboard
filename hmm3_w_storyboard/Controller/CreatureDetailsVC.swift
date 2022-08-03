@@ -9,7 +9,7 @@ import UIKit
 
 class CreatureDetailsVC: UIViewController {
     
-    var selectedCreature: Creature?
+    var selectedCreaturePass: Creature?
     
     @IBOutlet weak var creatureImg: UIImageView!
     @IBOutlet weak var creatureName: UILabel!
@@ -22,7 +22,21 @@ class CreatureDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let selectedCreature = selectedCreaturePass {
+            configView(creature: selectedCreature)
+        }
     }
     
+    func configView(creature: Creature){
+        creatureImg.image = UIImage(named: creature.creatureImg)
+        creatureName.text = creature.name
+        creatureAtckLbl.text = creature.attack
+        creatureDefLbl.text = creature.defense
+        creatureDmgLbl.text = creature.damage
+        creatureHpLbl.text = creature.health
+        creatureSpdLbl.text = creature.speed
+        creatureSpecLbl.text = creature.specAbility
+    }
     
 }

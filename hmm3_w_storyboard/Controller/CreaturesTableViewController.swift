@@ -17,11 +17,6 @@ class CreaturesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let creaturesCount = filteredCreatures {
             return creaturesCount.count
@@ -42,5 +37,16 @@ class CreaturesTableViewController: UITableViewController {
         }
         return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toCreatureDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCreatureDetails",
+            let destination = segue.destination as? CreatureDetailsVC {
+                let indexPath = tableView.indexPathForSelectedRow!
+            }
+        }
 
 }

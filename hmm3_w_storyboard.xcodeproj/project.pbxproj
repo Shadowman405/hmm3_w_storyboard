@@ -31,6 +31,8 @@
 		BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */; };
 		BF41714A289D9E90006E5E98 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417149289D9E90006E5E98 /* Spells.swift */; };
 		BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */; };
+		BF41714E289DA34B006E5E98 /* DataManagerSpells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714D289DA34B006E5E98 /* DataManagerSpells.swift */; };
+		BF417150289DA51A006E5E98 /* SpellCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsVC.swift; sourceTree = "<group>"; };
 		BF417149289D9E90006E5E98 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
 		BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCategoryTVC.swift; sourceTree = "<group>"; };
+		BF41714D289DA34B006E5E98 /* DataManagerSpells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerSpells.swift; sourceTree = "<group>"; };
+		BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				BF41713F2899B29C006E5E98 /* Creatures.swift */,
 				BF4171412899B2B9006E5E98 /* Race.swift */,
 				BF417149289D9E90006E5E98 /* Spells.swift */,
+				BF41714D289DA34B006E5E98 /* DataManagerSpells.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				BF41712D2896EA03006E5E98 /* TownCell.swift */,
 				BF41713928973CFF006E5E98 /* HeroCell.swift */,
 				BF4171432899B7BA006E5E98 /* CreatureCell.swift */,
+				BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4171442899B7BA006E5E98 /* CreatureCell.swift in Sources */,
+				BF41714E289DA34B006E5E98 /* DataManagerSpells.swift in Sources */,
 				BF4171402899B29C006E5E98 /* Creatures.swift in Sources */,
 				BF41713A28973CFF006E5E98 /* HeroCell.swift in Sources */,
 				BF41712E2896EA04006E5E98 /* TownCell.swift in Sources */,
@@ -350,6 +357,7 @@
 				BF41713828973A56006E5E98 /* Heroes.swift in Sources */,
 				BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
+				BF417150289DA51A006E5E98 /* SpellCategoryCell.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,
 				BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */,
 				BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */,

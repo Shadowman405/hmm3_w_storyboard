@@ -39,10 +39,10 @@ class ViewController: UIViewController {
            let destination = segue.destination as? HeroesController {
             destination.filteredHeroes = heroesArray
         } else if segue.identifier == "toCreaturesTableVC",
-                  let destination = segue.destination as? CreaturesTableViewController {
+            let destination = segue.destination as? CreaturesTableViewController {
             destination.filteredCreatures = creaturesArray
-        }
-        }
+        } 
+    }
     
 }
 

@@ -30,6 +30,7 @@
 		BF4171462899B7E7006E5E98 /* CreaturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */; };
 		BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */; };
 		BF41714A289D9E90006E5E98 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417149289D9E90006E5E98 /* Spells.swift */; };
+		BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesTableViewController.swift; sourceTree = "<group>"; };
 		BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailsVC.swift; sourceTree = "<group>"; };
 		BF417149289D9E90006E5E98 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCategoryTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				BF41713D2897EDEE006E5E98 /* HeroDetailsVC.swift */,
 				BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */,
 				BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */,
+				BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,
+				BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */,
 				BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

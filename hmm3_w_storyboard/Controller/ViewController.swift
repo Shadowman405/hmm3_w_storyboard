@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func MagicClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toSpellsCategory", sender: self)
     }
     
     @IBAction func ArtifactsClicked(_ sender: Any) {

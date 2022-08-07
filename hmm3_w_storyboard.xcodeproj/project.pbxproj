@@ -33,6 +33,8 @@
 		BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */; };
 		BF41714E289DA34B006E5E98 /* DataManagerSpells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714D289DA34B006E5E98 /* DataManagerSpells.swift */; };
 		BF417150289DA51A006E5E98 /* SpellCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */; };
+		BF417152289FC3C2006E5E98 /* SpellsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417151289FC3C2006E5E98 /* SpellsTVC.swift */; };
+		BF417154289FC483006E5E98 /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417153289FC483006E5E98 /* SpellCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCategoryTVC.swift; sourceTree = "<group>"; };
 		BF41714D289DA34B006E5E98 /* DataManagerSpells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerSpells.swift; sourceTree = "<group>"; };
 		BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCategoryCell.swift; sourceTree = "<group>"; };
+		BF417151289FC3C2006E5E98 /* SpellsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsTVC.swift; sourceTree = "<group>"; };
+		BF417153289FC483006E5E98 /* SpellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 				BF41713928973CFF006E5E98 /* HeroCell.swift */,
 				BF4171432899B7BA006E5E98 /* CreatureCell.swift */,
 				BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */,
+				BF417153289FC483006E5E98 /* SpellCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				BF4171452899B7E7006E5E98 /* CreaturesTableViewController.swift */,
 				BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */,
 				BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */,
+				BF417151289FC3C2006E5E98 /* SpellsTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				BF16EA432894A3AC00D8F27C /* ViewController.swift in Sources */,
 				BF4171422899B2B9006E5E98 /* Race.swift in Sources */,
 				BF41714A289D9E90006E5E98 /* Spells.swift in Sources */,
+				BF417154289FC483006E5E98 /* SpellCell.swift in Sources */,
 				BF41713E2897EDEE006E5E98 /* HeroDetailsVC.swift in Sources */,
 				BF417132289737E1006E5E98 /* DataManager.swift in Sources */,
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
@@ -361,6 +368,7 @@
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,
 				BF41714C289DA100006E5E98 /* SpellsCategoryTVC.swift in Sources */,
 				BF41713C28973E56006E5E98 /* HeroesController.swift in Sources */,
+				BF417152289FC3C2006E5E98 /* SpellsTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

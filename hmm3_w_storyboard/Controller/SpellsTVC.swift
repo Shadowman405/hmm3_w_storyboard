@@ -18,18 +18,20 @@ class SpellsTVC: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        if let spellsCount = selectedSpells {
+            return spellsCount.count
+        }
         return 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SpellCell", for: indexPath) as? SpellCell {
+            if let arraySpells = selectedSpells {
+                cell.configureCell(spell: arraySpells[indexPath.row])
+                return cell
+            }
+        }
+        return UITableViewCell()
     }
-    */
 
 }

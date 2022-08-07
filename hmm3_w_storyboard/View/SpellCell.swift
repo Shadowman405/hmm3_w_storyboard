@@ -22,5 +22,10 @@ class SpellCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    func configureCell(spell: Spell){
+        spellImg.image = UIImage(named: spell.spellImage)
+        spellNameLbl.text = spell.spellName
+    }
 
 }

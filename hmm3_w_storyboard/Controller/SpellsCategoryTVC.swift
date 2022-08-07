@@ -45,8 +45,16 @@ class SpellsCategoryTVC: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow!
             if indexPath.row == 0 {
                 destination.selectedSpells = data.spells.filter {$0.spellSchool == .AllSchools  }
+            } else if indexPath.row == 1 {
+                destination.selectedSpells = data.spells.filter {$0.spellSchool == .AirMagic}
+            } else if indexPath.row == 2 {
+                destination.selectedSpells = data.spells.filter {$0.spellSchool == .EarthMagic}
+            } else if indexPath.row == 3 {
+                destination.selectedSpells = data.spells.filter {$0.spellSchool == .FireMagic}
+            } else if indexPath.row == 4 {
+                destination.selectedSpells = data.spells.filter {$0.spellSchool == .WaterMagic}
             }
-        }
+     }
     }
 
 }

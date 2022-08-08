@@ -35,6 +35,7 @@
 		BF417150289DA51A006E5E98 /* SpellCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */; };
 		BF417152289FC3C2006E5E98 /* SpellsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417151289FC3C2006E5E98 /* SpellsTVC.swift */; };
 		BF417154289FC483006E5E98 /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF417153289FC483006E5E98 /* SpellCell.swift */; };
+		BF41715628A180AB006E5E98 /* SpellDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41715528A180AB006E5E98 /* SpellDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		BF41714F289DA51A006E5E98 /* SpellCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCategoryCell.swift; sourceTree = "<group>"; };
 		BF417151289FC3C2006E5E98 /* SpellsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsTVC.swift; sourceTree = "<group>"; };
 		BF417153289FC483006E5E98 /* SpellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
+		BF41715528A180AB006E5E98 /* SpellDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				BF417147289AFA11006E5E98 /* CreatureDetailsVC.swift */,
 				BF41714B289DA100006E5E98 /* SpellsCategoryTVC.swift */,
 				BF417151289FC3C2006E5E98 /* SpellsTVC.swift */,
+				BF41715528A180AB006E5E98 /* SpellDetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				BF16EA3F2894A3AC00D8F27C /* AppDelegate.swift in Sources */,
 				BF41713828973A56006E5E98 /* Heroes.swift in Sources */,
 				BF417148289AFA12006E5E98 /* CreatureDetailsVC.swift in Sources */,
+				BF41715628A180AB006E5E98 /* SpellDetailsVC.swift in Sources */,
 				BF16EA412894A3AC00D8F27C /* SceneDelegate.swift in Sources */,
 				BF417150289DA51A006E5E98 /* SpellCategoryCell.swift in Sources */,
 				BF16EA6F2894A4B900D8F27C /* HeroesTableViewController.swift in Sources */,

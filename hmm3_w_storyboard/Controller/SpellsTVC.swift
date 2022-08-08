@@ -37,5 +37,20 @@ class SpellsTVC: UITableViewController {
         }
         return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toSpellDetailsVC", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSpellDetailsVC",
+            let destination = segue.destination as? SpellDetailsVC {
+                let indexPath = tableView.indexPathForSelectedRow!
+                if let spell = selectedSpells {
+                    destination.selectedSpellPass = spell[indexPath.row]
+                }
+            }
+
+    }
 
 }

@@ -21,12 +21,15 @@ class SpellDetailsVC: UIViewController {
     
 
     override func viewDidLoad() {
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
         super.viewDidLoad()
-
         if let selectedSpell = selectedSpellPass {
             configureView(spell: selectedSpell)
         }
     }
+    
+    
     
     func configureView(spell: Spell){
         spellName.text = spell.spellName
@@ -38,4 +41,11 @@ class SpellDetailsVC: UIViewController {
         expertEffLbl.text = spell.spellExpertEffect
     }
 
+}
+
+
+extension SpellDetailsVC: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
 }

@@ -13,6 +13,10 @@ class SpellsTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        swipeBack.direction = .right
+        self.view.addGestureRecognizer(swipeBack)
     }
 
     // MARK: - Table view data source
@@ -51,6 +55,10 @@ class SpellsTVC: UITableViewController {
                 }
             }
 
+    }
+    
+    @objc func swipeBack(){
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

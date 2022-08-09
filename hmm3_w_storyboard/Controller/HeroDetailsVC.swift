@@ -33,6 +33,10 @@ class HeroDetailsVC: UIViewController {
         if heroSecondSkill.text == nil {
             secondTextLbl.isHidden = true
         }
+        
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        swipeBack.direction = .right
+        self.view.addGestureRecognizer(swipeBack)
     }
     
     func configureView(hero: Hero) {
@@ -43,5 +47,9 @@ class HeroDetailsVC: UIViewController {
             heroFirstSkill.text = hero.firstSkill
             heroSecondSkill.text = hero.secondSkill
             heroDescription.text = hero.description
+    }
+    
+    @objc func swipeBack(){
+        self.navigationController?.popViewController(animated: true)
     }
 }

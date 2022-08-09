@@ -14,6 +14,10 @@ class SpellsCategoryTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        swipeBack.direction = .right
+        self.view.addGestureRecognizer(swipeBack)
+        
     }
 
     // MARK: - Table view data source
@@ -55,6 +59,10 @@ class SpellsCategoryTVC: UITableViewController {
                 destination.selectedSpells = data.spells.filter {$0.spellSchool == .WaterMagic}
             }
      }
+    }
+    
+    @objc func swipeBack(){
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

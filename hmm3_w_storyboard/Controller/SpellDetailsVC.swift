@@ -21,7 +21,9 @@ class SpellDetailsVC: UIViewController {
     
 
     override func viewDidLoad() {
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        swipeBack.direction = .right
+        self.view.addGestureRecognizer(swipeBack)
         
         super.viewDidLoad()
         if let selectedSpell = selectedSpellPass {
@@ -40,12 +42,10 @@ class SpellDetailsVC: UIViewController {
         advancedEffLbl.text = spell.spellAdvancedEffect
         expertEffLbl.text = spell.spellExpertEffect
     }
-
-}
-
-
-extension SpellDetailsVC: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
+    
+    
+    @objc func swipeBack(){
+        self.navigationController?.popViewController(animated: true)
     }
+
 }

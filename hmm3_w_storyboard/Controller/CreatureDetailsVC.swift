@@ -23,6 +23,10 @@ class CreatureDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        swipeBack.direction = .right
+        self.view.addGestureRecognizer(swipeBack)
+        
         if let selectedCreature = selectedCreaturePass {
             configView(creature: selectedCreature)
         }
@@ -37,6 +41,10 @@ class CreatureDetailsVC: UIViewController {
         creatureHpLbl.text = creature.health
         creatureSpdLbl.text = creature.speed
         creatureSpecLbl.text = creature.specAbility
+    }
+    
+    @objc func swipeBack(){
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
